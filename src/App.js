@@ -4,6 +4,18 @@ import RelationshipVerification from './english-format/RelationshipVerification'
 import ScholarshipVerification from './english-format/ScholarshipVerification';
 import PowerofAttorney from './english-format/PowerofAttorney';
 import BirthDateVerification from './english-format/BirthDateVerification';
+import AddressVerification from './english-format/AddressVerification';
+import AnnualIncomeCertificate from './english-format/AnnualIncomeCertificate';
+import UnmarriedVerification from './english-format/UnmarriedVerification';
+import TaxClearanceCertificate from './english-format/TaxCleranceCertificate';
+import TaxClearBasic from './english-format/TaxClearBasic';
+import SamePersonCertificate from './english-format/SamePersonCertificate';
+import PropertyValuationReport from './english-format/PropertyValuationReport';
+import OccupationVerification from './english-format/OccupationVerification';
+import MarriageCertificate from './english-format/MarriageCertificate';
+import EconomicStatus from './english-format/EconomicStatus';
+import DigitalVerification from './english-format/DigitalVerification';
+import CertificateOfOccupation from './english-format/CertificateofOccupation';
 import './App.css';
 
 function App() {
@@ -19,6 +31,30 @@ function App() {
         return <ScholarshipVerification />;
       case 'powerofattorney':
         return <PowerofAttorney />;
+      case 'address':
+        return <AddressVerification />;
+      case 'annualincome':
+        return <AnnualIncomeCertificate />;
+      case 'unmarried':
+        return <UnmarriedVerification />;
+      case 'taxclerance':
+        return <TaxClearanceCertificate />;
+      case 'taxclearbasic':
+        return <TaxClearBasic />;
+      case 'sameperson':
+        return <SamePersonCertificate />;
+      case 'propertyvaluation':
+        return <PropertyValuationReport />;
+      case 'occupationverification':
+        return <OccupationVerification />;
+      case 'marriage':
+        return <MarriageCertificate />;
+      case 'economicstatus':
+        return <EconomicStatus />;
+      case 'digital':
+        return <DigitalVerification />;
+      case 'certificateofoccupation':
+        return <CertificateOfOccupation />;
       case 'birthdate':
         return <BirthDateVerification />;
       default:
@@ -34,6 +70,18 @@ function App() {
         <option value="scholarship">Scholarship Verification</option>
         <option value="powerofattorney">Power Of Attorney</option>
         <option value="birthdate">Birthdate Verification</option>
+        <option value="address">Address Verification</option>
+        <option value="annualincome">Annual Income Certificate</option>
+        <option value="unmarried">Unmarried Verification</option>
+        <option value="taxclerance">Tax Clearance Certificate</option>
+        <option value="taxclearbasic">Tax Clear Basic</option>
+        <option value="propertyvaluation">Property Valuation Report</option>
+        <option value="occupationverification">Occupation Verification</option>
+        <option value="marriage">Marriage Certificate</option>
+        <option value="economicstatus">Economic Status</option>
+        <option value="digital">Digital Verification</option>
+        <option value="certificateofoccupation">Certificate Of Occupation</option>
+        <option value="sameperson">Same Person Certificate</option>
       </select>
 
       {renderForm()}

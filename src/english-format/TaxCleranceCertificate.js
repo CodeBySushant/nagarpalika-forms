@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TaxClearanceCertificate.css'; // Link to the CSS file
+import './TaxCleranceCertificate'; // Link to the CSS file
 
 const TaxClearanceCertificate = () => {
   const [formData, setFormData] = useState({
