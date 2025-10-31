@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './TaxCleranceCertificate'; // Link to the CSS file
+import './TaxCleranceCertificate.css'; // Link to the CSS file
 
 const TaxClearanceCertificate = () => {
   const [formData, setFormData] = useState({
@@ -8,10 +8,9 @@ const TaxClearanceCertificate = () => {
     date: '2025-10-31',
     ownerTitle: 'Mr.',
     ownerNameBody: '',
-    residencyLocation: '', // District, Municipality or VDC
     municipality: 'Nagarjun Municipality',
     wardNo: '1',
-    district: 'Bagmati Province', // As per the image, this is the main district
+    district: 'Bagmati Province',
     designation: '',
     applicantName: '',
     applicantAddress: '',
@@ -122,55 +121,58 @@ const TaxClearanceCertificate = () => {
             <option>3</option>
             {/* Add other wards */}
           </select>
+          (
           <input type="text" name="district" value={formData.district} onChange={handleChange} />
           , Nepal) have paid all the taxes of their properties.
         </p>
 
-        <table className="properties-table">
-          <thead>
-            <tr>
-              <th>SN</th>
-              <th>Description</th>
-              <th>Owner's Name</th>
-              <th>Location</th>
-              <th>Plot No.</th>
-              <th>Area</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            {properties.map((property, index) => (
-              <tr key={property.id}>
-                <td>{index + 1}</td>
-                <td>
-                  <input type="text" name="description" value={property.description} onChange={(e) => handlePropertyChange(index, e)} required />
-                </td>
-                <td>
-                  <select name="ownerTitle" value={property.ownerTitle} onChange={(e) => handlePropertyChange(index, e)}>
-                    <option>Mr.</option>
-                    <option>Mrs.</option>
-                    <option>Ms.</option>
-                  </select>
-                  <input type="text" name="ownerName" value={property.ownerName} onChange={(e) => handlePropertyChange(index, e)} required />
-                </td>
-                <td>
-                  <input type="text" name="location" value={property.location} onChange={(e) => handlePropertyChange(index, e)} required />
-                </td>
-                <td>
-                  <input type="text" name="plotNo" value={property.plotNo} onChange={(e) => handlePropertyChange(index, e)} required />
-                </td>
-                <td>
-                  <input type="text" name="area" value={property.area} onChange={(e) => handlePropertyChange(index, e)} required />
-                </td>
-                <td>
-                  {index === properties.length - 1 && (
-                    <button type="button" onClick={addProperty} className="add-btn">+</button>
-                  )}
-                </td>
+        <div className="table-wrapper"> {/* Added wrapper for overflow scrolling */ }
+          <table className="properties-table">
+            <thead>
+              <tr>
+                <th>SN</th>
+                <th>Description</th>
+                <th>Owner's Name</th>
+                <th>Location</th>
+                <th>Plot No.</th>
+                <th>Area</th>
+                <th></th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {properties.map((property, index) => (
+                <tr key={property.id}>
+                  <td>{index + 1}</td>
+                  <td>
+                    <input type="text" name="description" value={property.description} onChange={(e) => handlePropertyChange(index, e)} required />
+                  </td>
+                  <td className="owner-name-cell">
+                    <select name="ownerTitle" value={property.ownerTitle} onChange={(e) => handlePropertyChange(index, e)}>
+                      <option>Mr.</option>
+                      <option>Mrs.</option>
+                      <option>Ms.</option>
+                    </select>
+                    <input type="text" name="ownerName" value={property.ownerName} onChange={(e) => handlePropertyChange(index, e)} required />
+                  </td>
+                  <td>
+                    <input type="text" name="location" value={property.location} onChange={(e) => handlePropertyChange(index, e)} required />
+                  </td>
+                  <td>
+                    <input type="text" name="plotNo" value={property.plotNo} onChange={(e) => handlePropertyChange(index, e)} required />
+                  </td>
+                  <td>
+                    <input type="text" name="area" value={property.area} onChange={(e) => handlePropertyChange(index, e)} required />
+                  </td>
+                  <td>
+                    {index === properties.length - 1 && (
+                      <button type="button" onClick={addProperty} className="add-btn">+</button>
+                    )}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
         <div className="designation-section">
           <input type="text" placeholder="Signature" disabled />
