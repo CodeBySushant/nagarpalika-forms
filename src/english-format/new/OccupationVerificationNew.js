@@ -91,7 +91,7 @@ const OccupationVerificationNew = () => {
 
         <div className="subject-line">
           {/* The subject is still "BIRTH CERTIFICATE" as per the image */ }
-          <strong>Subject: <u>BIRTH CERTIFICATE</u></strong>
+          <strong>Subject: <u>OCCUPATION VERIFICATION CERTIFICATE</u></strong>
           <br />
           <strong><u>TO WHOM IT MAY CONCERN</u></strong>
         </div>

@@ -16,6 +16,16 @@ import MarriageCertificate from './english-format/MarriageCertificate';
 import EconomicStatus from './english-format/EconomicStatus';
 import DigitalVerification from './english-format/DigitalVerification';
 import CertificateOfOccupation from './english-format/CertificateofOccupation';
+
+import AddressVerificationNew from './english-format/new/AddressVerificationNew';
+import AnnualIncomeVerificationNew from './english-format/new/AnnualIncomeVerificationNew';
+import BirthCertificate from './english-format/new/BirthCertificate';
+import OccupationVerificationNew from './english-format/new/OccupationVerificationNew';
+import SurnameVerificationAfterMarriage from './english-format/new/SurnameVerificationAfterMarriage';
+import SurnameVerificationCertificateNew from './english-format/new/SurnameVerificationCertificateNew';
+import TaxClearanceNewFormat from './english-format/new/TaxClearanceNewFormat';
+import VerifyRevisedEmblem from './english-format/new/VerifyRevisedEmblem';
+
 import './App.css';
 
 function App() {
@@ -57,6 +67,24 @@ function App() {
         return <CertificateOfOccupation />;
       case 'birthdate':
         return <BirthDateVerification />;
+
+      case 'newaddress':
+        return <AddressVerificationNew />;
+      case 'annualincomenew':
+        return <AnnualIncomeVerificationNew />;
+      case 'birthcertificate':
+        return <BirthCertificate />;
+      case 'occupationnew':
+        return <OccupationVerificationNew />;
+      case 'surnameaftermarriage':
+        return <SurnameVerificationAfterMarriage />;
+      case 'surnamecertificate':
+        return <SurnameVerificationCertificateNew />;
+      case 'taxclearancenew':
+        return <TaxClearanceNewFormat />;
+      case 'revisedemblem':
+        return <VerifyRevisedEmblem />;
+
       default:
         return <AllowanceForm />;
     }
@@ -82,6 +110,16 @@ function App() {
         <option value="digital">Digital Verification</option>
         <option value="certificateofoccupation">Certificate Of Occupation</option>
         <option value="sameperson">Same Person Certificate</option>
+
+        <option value="newaddress">Address Verification New</option>
+        <option value="annualincomenew">Annual Income Verification New</option>
+        <option value="birthcertificate">Birth Certificate</option>
+        <option value="occupationnew">Occupation Verification New</option>
+        <option value="surnameaftermarriage">Surname Verification After Marriage</option>
+        <option value="surnamecertificate">Surname Verification Certificate New</option>
+        <option value="taxclearancenew">Tax Clearance New Format</option>
+        <option value="revisedemblem">Verify Revised Emblem</option>
+
       </select>
 
       {renderForm()}
