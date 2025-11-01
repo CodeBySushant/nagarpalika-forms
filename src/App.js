@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+// src/appeal
 import AllowanceForm from './appeal/AllowanceForm';
+import BusinessRegistrationSignatureForm from './appeal/BusinessRegistrationSignatureForm'
+
+// src/english-format
 import RelationshipVerification from './english-format/RelationshipVerification';
 import ScholarshipVerification from './english-format/ScholarshipVerification';
 import PowerofAttorney from './english-format/PowerofAttorney';
@@ -17,6 +21,7 @@ import EconomicStatus from './english-format/EconomicStatus';
 import DigitalVerification from './english-format/DigitalVerification';
 import CertificateOfOccupation from './english-format/CertificateofOccupation';
 
+// src/english-format/new
 import AddressVerificationNew from './english-format/new/AddressVerificationNew';
 import AnnualIncomeVerificationNew from './english-format/new/AnnualIncomeVerificationNew';
 import BirthCertificate from './english-format/new/BirthCertificate';
@@ -33,8 +38,12 @@ function App() {
 
   const renderForm = () => {
     switch (form) {
+      // src/appeal
       case 'allowance':
         return <AllowanceForm />;
+      case 'businessregsignature':
+        return <BusinessRegistrationSignatureForm />;
+      // src/english-format
       case 'relationship':
         return <RelationshipVerification />;
       case 'scholarship':
@@ -67,7 +76,7 @@ function App() {
         return <CertificateOfOccupation />;
       case 'birthdate':
         return <BirthDateVerification />;
-
+      // src/english-format/new
       case 'newaddress':
         return <AddressVerificationNew />;
       case 'annualincomenew':
@@ -93,7 +102,10 @@ function App() {
   return (
     <div className="App">
       <select onChange={(e) => setForm(e.target.value)} value={form}>
+
         <option value="allowance">Allowance Form</option>
+        <option value="businessregsignature">Business Registration Signature Form</option>
+
         <option value="relationship">Relationship Verification</option>
         <option value="scholarship">Scholarship Verification</option>
         <option value="powerofattorney">Power Of Attorney</option>
