@@ -43,8 +43,19 @@ import BusinessRegRenewCompleted from './business-reg/BusinessRegRenewCompleted'
 import BusinessRegistrationCertificate from './business-reg/BusinessRegistrationCertificate';
 import BusinessRegistrationRenewLeft from './business-reg/BusinessRegistrationRenewLeft';
 
-// src-daily-work-execute
+// src/daily-work-execute
 import DailyWorkPerformanceList from './daily-work-execute/DailyWorkPerformanceList';
+
+// src/economic
+import AdvancePaymentRequest from './economic/AdvancePaymentRequest';
+import BankAccountForSocialSecurity from './economic/BankAccountForSocialSecurity';
+import FixedAssetValuation from './economic/FixedAssetValuation';
+import LekhaParikshyan from './economic/LekhaParikshyan';
+import NewBeneficiaryAccount from './economic/NewBeneficiaryAccount';
+import ReqforHelpinHealth from './economic/ReqforHelpinHealth';
+import SocialSecurityPaymentClosure from './economic/SocialSecurityPaymentClosure';
+import SocialSecurityViaGuardian from './economic/SocialSecurityViaGuardian';
+import WorkPlanningCompleted from './economic/WorkPlanningCompleted';
 
 // src/english-format
 import RelationshipVerificationEnglish from './english-format/RelationshipVerificationEnglish';
@@ -148,6 +159,25 @@ function App() {
       // src/daily-work-execute
       case 'dailyworkperformance':
         return <DailyWorkPerformanceList />;
+      // src/economic
+      case 'advancepaymentreq':
+        return <AdvancePaymentRequest />;
+      case 'bankaccountsocialsecurity':
+        return <BankAccountForSocialSecurity />;
+      case 'fixedassetvaluation':
+        return <FixedAssetValuation />;
+      case 'lekhaparikshyan':
+        return <LekhaParikshyan />;
+      case 'newbeneficiaryaccount':
+        return <NewBeneficiaryAccount />;
+      case 'reqforhealth':
+        return <ReqforHelpinHealth />;
+      case 'socialsecuritypayment':
+        return <SocialSecurityPaymentClosure />;
+      case 'socialsecurityguardian':
+        return <SocialSecurityViaGuardian />;
+      case 'workplancomplete':
+        return <WorkPlanningCompleted />;
       // src/english-format
       case 'relationshipenglish':
         return <RelationshipVerificationEnglish />;
@@ -330,8 +360,6 @@ function App() {
         <option value="reqforcertification">Request for Certification</option>
         <option value="reqforcertificationmotherfather">Request for Certification Mother Father</option>
         <option value="trivalverifyrecommend">Tribal Verification Recommendation</option>
-        {/* src/daily-work-execute */}
-        <option value="dailyworkperformance">Daily Work Performance List</option>
         {/* src/business-recommendation */}
         <option value="businessclosed">BusinessClosed</option>
         <option value="businessextension">BusinessExtensionPannumber</option>
@@ -354,6 +382,18 @@ function App() {
         <option value="businessregnenewcompleted">Business Reg Renew Completed</option>
         <option value="businessregcertificate">Business Registration Certificate</option>
         <option value="businessregistrationrenewleft">Business Registration Renew Left</option>
+        {/* src/daily-work-execute */}
+        <option value="dailyworkperformance">Daily Work Performance List</option>
+        {/* src/economic */}
+        <option value="advancepaymentreq">AdvancePaymentRequest</option>
+        <option value="bankaccountsocialsecurity">BankAccountForSocialSecurity</option>
+        <option value="fixedassetvaluation">FixedAssetValuation</option>
+        <option value="lekhaparikshyan">LekhaParikshyan</option>
+        <option value="newbeneficiaryaccount">NewBeneficiaryAccount</option>
+        <option value="reqforhealth">ReqforHelpinHealth</option>
+        <option value="socialsecuritypayment">SocialSecurityPaymentClosure</option>
+        <option value="socialsecurityguardian">SocialSecurityViaGuardian</option>
+        <option value="workplancomplete">WorkPlanningCompleted</option>
         {/* src/english-format */}
         <option value="relationshipenglish">Relationship Verification English</option>
         <option value="scholarship">Scholarship Verification</option>
