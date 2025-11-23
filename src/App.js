@@ -6,7 +6,18 @@ import DomesticAnimalMaternityNutritionAllowance from './animal-husbandry/Domest
 
 // src/appeal
 import AllowanceForm from './appeal/AllowanceForm';
+import ApplicationforIndigenousNationalityCertification from './appeal/ApplicationforIndigenousNationalityCertification'
+import ApplicationforKhasAryaCasteCertification from './appeal/ApplicationforKhasAryaCasteCertification'
+import BusinessDeregistrationForm from './appeal/BusinessDeregistrationForm'
 import BusinessRegistrationSignatureForm from './appeal/BusinessRegistrationSignatureForm'
+import CitizenshipwithHusbandSurname from './appeal/CitizenshipwithHusbandSurname'
+import CitizenshipwithoutHusbandSurname from './appeal/CitizenshipwithoutHusbandSurname'
+import DalitCasteCertification from './appeal/DalitCasteCertification'
+import ImpoverishedCitizenApplicationandRecommendation from './appeal/ImpoverishedCitizenApplicationandRecommendation'
+import LandBoundaryVerificationForm from './appeal/LandBoundaryVerificationForm'
+import RequestforCertification from './appeal/RequestforCertification'
+import RequestforCertificationMotherFather from './appeal/RequestforCertificationMotherFather'
+import TribalVerificationRecommendation from './appeal/TribalVerificationRecommendation'
 
 // src/english-format
 import RelationshipVerification from './english-format/RelationshipVerification';
@@ -76,8 +87,30 @@ function App() {
       // src/appeal
       case 'allowance':
         return <AllowanceForm />;
+      case 'applicationforindigenousnationality':
+        return <ApplicationforIndigenousNationalityCertification />;
+      case 'applicationforkhasaryacaste':
+        return <ApplicationforKhasAryaCasteCertification />;
+      case 'businessderegistrationform':
+        return <BusinessDeregistrationForm />;
       case 'businessregsignature':
         return <BusinessRegistrationSignatureForm />;
+      case 'citizenshipwithhusbandsurname':
+        return <CitizenshipwithHusbandSurname />;
+      case 'citizenshipwithouthusbandsurname':
+        return <CitizenshipwithoutHusbandSurname />;
+      case 'dalitcastecertification':
+        return <DalitCasteCertification />;
+      case 'improvisedcitizenapplication':
+        return <ImpoverishedCitizenApplicationandRecommendation />;
+      case 'landboundaryverify':
+        return <LandBoundaryVerificationForm />;
+      case 'reqforcertification':
+        return <RequestforCertification />;
+      case 'reqforcertificationmotherfather':
+        return <RequestforCertificationMotherFather />;
+      case 'trivalverifyrecommend':
+        return <TribalVerificationRecommendation />;
       // src/english-format
       case 'relationship':
         return <RelationshipVerification />;
@@ -185,7 +218,18 @@ function App() {
         <option value="domesticanimalmaternitynutrition">Domestic Animal Maternity Nutrition Allowance</option>
 
         <option value="allowance">Allowance Form</option>
+        <option value="applicationforindigenousnationality">Application for Indigenous Nationality Certification</option>
+        <option value="applicationforkhasaryacaste">Application for Khas Arya Caste Certification</option>
+        <option value="businessderegistrationform">Business Deregistration Form</option>
         <option value="businessregsignature">Business Registration Signature Form</option>
+        <option value="citizenshipwithhusbandsurname">Citizenship with Husband Surname</option>
+        <option value="citizenshipwithouthusbandsurname">Citizenship without Husband Surname</option>
+        <option value="dalitcastecertification">Dalit Caste Certification</option>
+        <option value="improvisedcitizenapplication">Impoverished Citizen Application and Recommendation</option>
+        <option value="landboundaryverify">LandBoundary Verification Form</option>
+        <option value="reqforcertification">Request for Certification</option>
+        <option value="reqforcertificationmotherfather">Request for Certification Mother Father</option>
+        <option value="trivalverifyrecommend">Tribal Verification Recommendation</option>
 
         <option value="relationship">Relationship Verification</option>
         <option value="scholarship">Scholarship Verification</option>
