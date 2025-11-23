@@ -313,10 +313,10 @@ function App() {
   return (
     <div className="App">
       <select onChange={(e) => setForm(e.target.value)} value={form}>
-
+        {/* src/animal-husbandry */}
         <option value="domesticanimalinsuranceclaim">Domestic Animal Insurance Claim Recommendation</option>
         <option value="domesticanimalmaternitynutrition">Domestic Animal Maternity Nutrition Allowance</option>
-
+        {/* src/appeal */}
         <option value="allowance">Allowance Form</option>
         <option value="applicationforindigenousnationality">Application for Indigenous Nationality Certification</option>
         <option value="applicationforkhasaryacaste">Application for Khas Arya Caste Certification</option>
@@ -330,9 +330,31 @@ function App() {
         <option value="reqforcertification">Request for Certification</option>
         <option value="reqforcertificationmotherfather">Request for Certification Mother Father</option>
         <option value="trivalverifyrecommend">Tribal Verification Recommendation</option>
-
+        {/* src/daily-work-execute */}
         <option value="dailyworkperformance">Daily Work Performance List</option>
-
+        {/* src/business-recommendation */}
+        <option value="businessclosed">BusinessClosed</option>
+        <option value="businessextension">BusinessExtensionPannumber</option>
+        <option value="businessregsummary">BusinessRegSummary</option>
+        <option value="industrychange">IndustryChange</option>
+        <option value="industryclosednotify">IndustryClosedNotify</option>
+        <option value="industryformcancel">IndustryFormCancellation</option>
+        <option value="industryperiodsummary">IndustryPeriodSummary</option>
+        <option value="industryregrecommend">IndustryRegistrationRecommendation</option>
+        <option value="industryacceptanceletter">IndustryTransferAcceptanceLetter</option>
+        <option value="industrytransferacceptreq">IndustryTransferAcceptanceReq</option>
+        <option value="newbusinesspan">NewBusinessPannumber</option>
+        <option value="partnershipapplication">PartnershipRegistrationApplicationForm</option>
+        <option value="shopagricultureform">ShopAgriculturalForm</option>
+        <option value="shopreg">ShopRegistrationForm</option>
+        <option value="taxclearcertificate">TaxClearCertificate</option>
+        {/* src/business-reg */}
+        <option value="businessindustryregistration">Business Industry Registration Form</option>
+        <option value="newbusinessindustryregistration">Business Industry Registration New List</option>
+        <option value="businessregnenewcompleted">Business Reg Renew Completed</option>
+        <option value="businessregcertificate">Business Registration Certificate</option>
+        <option value="businessregistrationrenewleft">Business Registration Renew Left</option>
+        {/* src/english-format */}
         <option value="relationshipenglish">Relationship Verification English</option>
         <option value="scholarship">Scholarship Verification</option>
         <option value="powerofattorney">Power Of Attorney</option>
@@ -349,7 +371,7 @@ function App() {
         <option value="digital">Digital Verification</option>
         <option value="certificateofoccupation">Certificate Of Occupation</option>
         <option value="sameperson">Same Person Certificate</option>
-
+        {/* src/english-format/new */}
         <option value="newaddress">Address Verification New</option>
         <option value="annualincomenew">Annual Income Verification New</option>
         <option value="birthcertificate">Birth Certificate</option>
@@ -358,29 +380,7 @@ function App() {
         <option value="surnamecertificate">Surname Verification Certificate New</option>
         <option value="taxclearancenew">Tax Clearance New Format</option>
         <option value="revisedemblem">Verify Revised Emblem</option>
-
-        <option value="businessindustryregistration">Business Industry Registration Form</option>
-        <option value="newbusinessindustryregistration">Business Industry Registration New List</option>
-        <option value="businessregnenewcompleted">Business Reg Renew Completed</option>
-        <option value="businessregcertificate">Business Registration Certificate</option>
-        <option value="businessregistrationrenewleft">Business Registration Renew Left</option>
-
-        <option value="businessclosed">BusinessClosed</option>
-        <option value="businessextension">BusinessExtensionPannumber</option>
-        <option value="businessregsummary">BusinessRegSummary</option>
-        <option value="industrychange">IndustryChange</option>
-        <option value="industryclosednotify">IndustryClosedNotify</option>
-        <option value="industryformcancel">IndustryFormCancellation</option>
-        <option value="industryperiodsummary">IndustryPeriodSummary</option>
-        <option value="industryregrecommend">IndustryRegistrationRecommendation</option>
-        <option value="industryacceptanceletter">IndustryTransferAcceptanceLetter</option>
-        <option value="industrytransferacceptreq">IndustryTransferAcceptanceReq</option>
-        <option value="newbusinesspan">NewBusinessPannumber</option>
-        <option value="partnershipapplication">PartnershipRegistrationApplicationForm</option>
-        <option value="shopagricultureform">ShopAgriculturalForm</option>
-        <option value="shopreg">ShopRegistrationForm</option>
-        <option value="taxclearcertificate">TaxClearCertificate</option>
-
+        {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>
         <option value="birthorsettlementrecommend">BirthOrSettlementRecommendation</option>
