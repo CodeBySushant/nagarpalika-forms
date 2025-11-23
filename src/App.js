@@ -96,6 +96,28 @@ import GovOrganizationRegProof from './gov-organization/GovOrganizationRegProof'
 import GovOrganizationRegRecommendation from './gov-organization/GovOrganizationRegRecommendation';
 import GovOrganizationRegUnsucessful from './gov-organization/GovOrganizationRegUnsucessful';
 
+// src/home-land
+import BoundaryRecommendation from './home-land/BoundaryRecommendation';
+import CharKillaReloaded from './home-land/CharKillaReloaded';
+import GharKayamNewFormat from './home-land/GharKayamNewFormat';
+import GovernmentalLandUtilizationRecommendation from './home-land/GovernmentalLandUtilizationRecommendation';
+import HouseConstructionCompletedCertificate from './home-land/HouseConstructionCompletedCertificate';
+import HouseDestroyedRecommendation from './home-land/HouseDestroyedRecommendation';
+import HouseMaintainRecommendation from './home-land/HouseMaintainRecommendation';
+import HouseRoadVerification from './home-land/HouseRoadVerification';
+import HouseVerificationRecommendation from './home-land/HouseVerificationRecommendation';
+import KittaKatRecommendation from './home-land/KittaKatRecommendation';
+import LandClassificationRecommendation from './home-land/LandClassificationRecommendation';
+import LandConsolidationRecommendation from './home-land/LandConsolidationRecommendation';
+import OnsiteInspectionRecommendation from './home-land/OnsiteInspectionRecommendation';
+import PartialHouseConstructionCompletedCertificate from './home-land/PartialHouseConstructionCompletedCertificate';
+import PeskiAnurodhSifaris from './home-land/PeskiAnurodhSifaris';
+import PropertyOwnerCertificateCopyRecommendation from './home-land/PropertyOwnerCertificateCopyRecommendation';
+import PropertyOwnerCertificateHouseMaintainRecommendation from './home-land/PropertyOwnerCertificateHouseMaintainRecommendation';
+import PropertyOwnershipTransferKitani from './home-land/PropertyOwnershipTransferKitani';
+import PropertyOwnershipTransferRecommendation from './home-land/PropertyOwnershipTransferRecommendation';
+import PropertyVerificationRecommendation from './home-land/PropertyVerificationRecommendation';
+
 // src/society-family
 import BehaviorRecommendation from './society-family/BehaviorRecommendation';
 import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
@@ -297,6 +319,47 @@ function App() {
         return <GovOrganizationRegRecommendation />;
       case 'govorgunsuccessful':
         return <GovOrganizationRegUnsucessful />;
+      // src/home-land
+      case 'boundaryrecommend':
+        return <BoundaryRecommendation />;
+      case 'charkillareloaded':
+        return <CharKillaReloaded />;
+      case 'gharkayamformat':
+        return <GharKayamNewFormat />;
+      case 'govlandutilization':
+        return <GovernmentalLandUtilizationRecommendation />;
+      case 'houseconstructioncomplete':
+        return <HouseConstructionCompletedCertificate/>;
+      case 'housedestroyedrecommend':
+        return <HouseDestroyedRecommendation />;
+      case 'housemaintainrecommend':
+        return <HouseMaintainRecommendation />;
+      case 'houseverify':
+        return <HouseRoadVerification />;
+      case 'houseverifyrecommend':
+        return <HouseVerificationRecommendation />;
+      case 'kittakatrecommendation':
+        return <KittaKatRecommendation />;
+      case 'landclassificationrecommend':
+        return <LandClassificationRecommendation />;
+      case 'landconsolidationrecommend':
+        return <LandConsolidationRecommendation />;
+      case 'onsiteinspectionrecommend':
+        return <OnsiteInspectionRecommendation />;
+      case 'partialhouseconstructioncompleted':
+        return <PartialHouseConstructionCompletedCertificate />;
+      case 'peskianurodhsifaris':
+        return <PeskiAnurodhSifaris />;
+      case 'propertyownercertificatecopy':
+        return <PropertyOwnerCertificateCopyRecommendation />;
+      case 'propertyownercertificatemaintainrecommend':
+        return <PropertyOwnerCertificateHouseMaintainRecommendation />;
+      case 'propertyownershiptransferkitani':
+        return <PropertyOwnershipTransferKitani />;
+      case 'propertyownershiptransferrecommend':
+        return <PropertyOwnershipTransferRecommendation />;
+      case 'propertyverifyrecommend':
+        return <PropertyVerificationRecommendation />;
       // src/society-family
       case 'behaviorrecommend':
         return <BehaviorRecommendation />;
@@ -456,6 +519,27 @@ function App() {
         <option value="govorgregproof">GovOrganizationRegProof</option>
         <option value="govorgregrecommend">GovOrganizationRegRecommendation</option>
         <option value="govorgunsuccessful">GovOrganizationRegUnsucessful</option>
+        {/* src/home-land */}
+        <option value="boundaryrecommend">BoundaryRecommendation</option>
+        <option value="charkillareloaded">CharKillaReloaded</option>
+        <option value="gharkayamformat">GharKayamNewFormat</option>
+        <option value="govlandutilization">GovernmentalLandUtilizationRecommendation</option>
+        <option value="houseconstructioncomplete">HouseConstructionCompletedCertificate</option>
+        <option value="housedestroyedrecommend">HouseDestroyedRecommendation</option>
+        <option value="housemaintainrecommend">HouseMaintainRecommendation</option>
+        <option value="houseverify">HouseRoadVerification</option>
+        <option value="houseverifyrecommend">HouseVerificationRecommendation</option>
+        <option value="kittakatrecommendation">KittaKatRecommendation</option>
+        <option value="landclassificationrecommend">LandClassificationRecommendation</option>
+        <option value="landconsolidationrecommend">LandConsolidationRecommendation</option>
+        <option value="onsiteinspectionrecommend">OnsiteInspectionRecommendation</option>
+        <option value="partialhouseconstructioncompleted">PartialHouseConstructionCompletedCertificate</option>
+        <option value="peskianurodhsifaris">PeskiAnurodhSifaris</option>
+        <option value="propertyownercertificatecopy">PropertyOwnerCertificateCopyRecommendation</option>
+        <option value="propertyownercertificatemaintainrecommend">PropertyOwnerCertificateHouseMaintainRecommendation</option>
+        <option value="propertyownershiptransferkitani">PropertyOwnershipTransferKitani</option>
+        <option value="propertyownershiptransferrecommend">PropertyOwnershipTransferRecommendation</option>
+        <option value="propertyverifyrecommend">PropertyVerificationRecommendation</option>
         {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>
