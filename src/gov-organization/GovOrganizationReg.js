@@ -1,6 +1,6 @@
 // 1
 import React from "react";
-import "./App.css";
+import "./GovOrganizationReg";
 
 function App() {
   return (

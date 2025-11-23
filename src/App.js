@@ -90,6 +90,12 @@ import SurnameVerificationCertificateNew from './english-format/new/SurnameVerif
 import TaxClearanceNewFormat from './english-format/new/TaxClearanceNewFormat';
 import VerifyRevisedEmblem from './english-format/new/VerifyRevisedEmblem';
 
+// src/gov-organization
+import GovOrganizationReg from './gov-organization/GovOrganizationReg';
+import GovOrganizationRegProof from './gov-organization/GovOrganizationRegProof';
+import GovOrganizationRegRecommendation from './gov-organization/GovOrganizationRegRecommendation';
+import GovOrganizationRegUnsucessful from './gov-organization/GovOrganizationRegUnsucessful';
+
 // src/society-family
 import BehaviorRecommendation from './society-family/BehaviorRecommendation';
 import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
@@ -282,6 +288,15 @@ function App() {
         return <ShopRegistrationForm />;
       case 'taxclearcertificate':
         return <TaxClearCertificate />;
+      // src/gov-organization
+      case 'govorgreg':
+        return <GovOrganizationReg />;
+      case 'govorgregproof':
+        return <GovOrganizationRegProof />;
+      case 'govorgrecommend':
+        return <GovOrganizationRegRecommendation />;
+      case 'govorgunsuccessful':
+        return <GovOrganizationRegUnsucessful />;
       // src/society-family
       case 'behaviorrecommend':
         return <BehaviorRecommendation />;
@@ -436,6 +451,11 @@ function App() {
         <option value="surnamecertificate">Surname Verification Certificate New</option>
         <option value="taxclearancenew">Tax Clearance New Format</option>
         <option value="revisedemblem">Verify Revised Emblem</option>
+        {/* src/gov-organization */}
+        <option value="govorgreg">GovOrganizationReg</option>
+        <option value="govorgregproof">GovOrganizationRegProof</option>
+        <option value="govorgregrecommend">GovOrganizationRegRecommendation</option>
+        <option value="govorgunsuccessful">GovOrganizationRegUnsucessful</option>
         {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>
