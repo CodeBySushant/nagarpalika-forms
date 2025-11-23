@@ -57,6 +57,11 @@ import SocialSecurityPaymentClosure from './economic/SocialSecurityPaymentClosur
 import SocialSecurityViaGuardian from './economic/SocialSecurityViaGuardian';
 import WorkPlanningCompleted from './economic/WorkPlanningCompleted';
 
+// src/education
+import BackwardCommunityRecommendation from './education/BackwardCommunityRecommendation';
+import NewClassRecommendation from './education/NewClassRecommendation';
+import ScholarshipRecommendation from './education/ScholarshipRecommendation';
+
 // src/english-format
 import RelationshipVerificationEnglish from './english-format/RelationshipVerificationEnglish';
 import ScholarshipVerification from './english-format/ScholarshipVerification';
@@ -178,6 +183,13 @@ function App() {
         return <SocialSecurityViaGuardian />;
       case 'workplancomplete':
         return <WorkPlanningCompleted />;
+      // src/education
+      case 'backwardcommunityrecommend':
+        return <BackwardCommunityRecommendation />;
+      case 'newclassrecommend':
+        return <NewClassRecommendation />;
+      case 'scholarshiprecommend':
+        return <ScholarshipRecommendation />;
       // src/english-format
       case 'relationshipenglish':
         return <RelationshipVerificationEnglish />;
@@ -394,6 +406,10 @@ function App() {
         <option value="socialsecuritypayment">SocialSecurityPaymentClosure</option>
         <option value="socialsecurityguardian">SocialSecurityViaGuardian</option>
         <option value="workplancomplete">WorkPlanningCompleted</option>
+        {/* src/education */}
+        <option value="backwardcommunityrecommend">BackwardCommunityRecommendation</option>
+        <option value="newclassrecommend">NewClassRecommendation</option>
+        <option value="scholarshiprecommend">ScholarshipRecommendation</option>
         {/* src/english-format */}
         <option value="relationshipenglish">Relationship Verification English</option>
         <option value="scholarship">Scholarship Verification</option>
