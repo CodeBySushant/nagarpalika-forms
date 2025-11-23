@@ -31,6 +31,14 @@ import SurnameVerificationCertificateNew from './english-format/new/SurnameVerif
 import TaxClearanceNewFormat from './english-format/new/TaxClearanceNewFormat';
 import VerifyRevisedEmblem from './english-format/new/VerifyRevisedEmblem';
 
+// src/business-reg
+import BusinessIndustryRegistrationForm from './business-reg/BusinessIndustryRegistrationForm';
+import BusinessIndustryRegistrationNewList from './business-reg/BusinessIndustryRegistrationNewList';
+import BusinessRegRenewCompleted from './business-reg/BusinessRegRenewCompleted';
+import BusinessRegistrationCertificate from './business-reg/BusinessRegistrationCertificate';
+import BusinessRegistrationRenewLeft from './business-reg/BusinessRegistrationRenewLeft';
+
+
 import './App.css';
 
 function App() {
@@ -93,6 +101,17 @@ function App() {
         return <TaxClearanceNewFormat />;
       case 'revisedemblem':
         return <VerifyRevisedEmblem />;
+      // src/business-reg
+      case 'businessindustryregistration':
+        return <BusinessIndustryRegistrationForm />;
+      case 'newbusinessindustryregistration':
+        return <BusinessIndustryRegistrationNewList />;
+      case 'businessregnenewcompleted':
+        return <BusinessRegRenewCompleted />;
+      case 'businessregcertificate':
+        return <BusinessRegistrationCertificate />;
+      case 'businessregistrationrenewleft':
+        return <BusinessRegistrationRenewLeft />;
 
       default:
         return <AllowanceForm />;
@@ -131,6 +150,12 @@ function App() {
         <option value="surnamecertificate">Surname Verification Certificate New</option>
         <option value="taxclearancenew">Tax Clearance New Format</option>
         <option value="revisedemblem">Verify Revised Emblem</option>
+
+        <option value="businessindustryregistration">BusinessIndustryRegistrationForm</option>
+        <option value="newbusinessindustryregistration">BusinessIndustryRegistrationNewList</option>
+        <option value="businessregnenewcompleted">BusinessRegRenewCompleted</option>
+        <option value="businessregcertificate">BusinessRegistrationCertificate</option>
+        <option value="businessregistrationrenewleft">BusinessRegistrationRenewLeft</option>
 
       </select>
 

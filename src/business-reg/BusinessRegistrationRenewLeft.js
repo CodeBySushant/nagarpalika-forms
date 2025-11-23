@@ -1,6 +1,6 @@
 // 4
 import React from "react";
-import "./App.css";
+import "./BusinessRegistrationRenewLeft.css";
 
 const tableData = [
   {
