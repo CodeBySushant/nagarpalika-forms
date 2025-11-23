@@ -129,6 +129,9 @@ import RoadExcavationApprovalRecommendation from './infra-development/RoadExcava
 import RoadMaintainRecommendation from './infra-development/RoadMaintainRecommendation';
 import TapInstallationRecommendation from './infra-development/TapInstallationRecommendation';
 
+// src/MRP
+import PassportRecommendation from './MRP/PassportRecommendation';
+
 // src/society-family
 import BehaviorRecommendation from './society-family/BehaviorRecommendation';
 import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
@@ -390,6 +393,9 @@ function App() {
         return <RoadMaintainRecommendation />;
       case 'tapinstallrecommend':
         return <TapInstallationRecommendation />;
+      // src/MRP
+      case 'passportrecommend':
+        return <PassportRecommendation />;
       // src/society-family
       case 'behaviorrecommend':
         return <BehaviorRecommendation />;
@@ -580,6 +586,8 @@ function App() {
         <option value="roadexcavationapprovalrecommend">RoadExcavationApprovalRecommendation</option>
         <option value="roadmaintainrecommend">RoadMaintainRecommendation</option>
         <option value="tapinstallrecommend">TapInstallationRecommendation</option>
+        {/* src/MRP */}
+        <option value="passportrecommend">PassportRecommendation</option>
         {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>
