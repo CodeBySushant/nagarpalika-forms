@@ -156,6 +156,23 @@ import OrganizationRegistrationRecommendation from './organization/OrganizationR
 import OrganizationRenewRecommendation from './organization/OrganizationRenewRecommendation';
 import SocialOrganizationRenew from './organization/SocialOrganizationRenew';
 
+// src/others
+import DifferentDOBCertification from './others/DifferentDOBCertification';
+import DifferentEnglishSpellingCertification from './others/DifferentEnglishSpellingCertification';
+import DifferentNameCertification from './others/DifferentNameCertification';
+import LeaveRequestApplication from './others/LeaveRequestApplication';
+
+// src/planning
+import AgreementOfPlan from './planning/AgreementOfPlan';
+import WithdrawalFundRecommendation from './planning/WithdrawalFundRecommendation';
+
+// src/planning
+import CategoryReportSearch from './report/CategoryReportSearch';
+import CertificateRenewalList from './report/CertificateRenewalList';
+import DisabilityIdentityCardList from './report/DisabilityIdentityCardList';
+import ReportList from './report/ReportList';
+import SeniorCitizenIdentityCardList from './report/SeniorCitizenIdentityCardList';
+
 // src/society-family
 import BehaviorRecommendation from './society-family/BehaviorRecommendation';
 import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
@@ -462,6 +479,31 @@ function App() {
         return <OrganizationRenewRecommendation />;
       case 'socialorganizationrenew':
         return <SocialOrganizationRenew />;
+      // src/others
+      case 'differentdobcertification':
+        return <DifferentDOBCertification />;
+      case 'differentenglishspellcertification':
+        return <DifferentEnglishSpellingCertification />;
+      case 'differentnamecertification':
+        return <DifferentNameCertification />;
+      case 'leavereqapplication':
+        return <LeaveRequestApplication />;
+      // src/planning
+      case 'agreementofplan':
+        return <AgreementOfPlan />;
+      case 'withdrawalfundrecommend':
+        return <WithdrawalFundRecommendation />;
+      // src/report
+      case 'categoryreportsearch':
+        return <CategoryReportSearch />;
+      case 'certificaterenewallist':
+        return <CertificateRenewalList />;
+      case 'disabilityidentitycardlist':
+        return <DisabilityIdentityCardList />;
+      case 'reportlist':
+        return <ReportList />;
+      case 'seniorcitizenidentitycardlist':
+        return <SeniorCitizenIdentityCardList />;
       // src/society-family
       case 'behaviorrecommend':
         return <BehaviorRecommendation />;
@@ -676,6 +718,20 @@ function App() {
         <option value="organizationregrecommend">OrganizationRegistrationRecommendation</option>
         <option value="organizationrenewrecommend">OrganizationRenewRecommendation</option>
         <option value="socialorganizationrenew">SocialOrganizationRenew</option>
+        {/* src/others */}
+        <option value="differentdobcertification">DifferentDOBCertification</option>
+        <option value="differentenglishspellcertification">DifferentEnglishSpellingCertification</option>
+        <option value="differentnamecertificate">DifferentNameCertification</option>
+        <option value="leavereqapplication">LeaveRequestApplication</option>
+        {/* src/others */}
+        <option value="agreementofplan">AgreementOfPlan</option>
+        <option value="withdrawalfundrecommend">WithdrawalFundRecommendation</option>
+        {/* src/others */}
+        <option value="categoryreportsearch">CategoryReportSearch</option>
+        <option value="certificaterenewallist">CertificateRenewalList</option>
+        <option value="disabilityindentitycardlist">DisabilityIdentityCardList</option>
+        <option value="reportlist">ReportList</option>
+        <option value="seniorcitizenidentitycardlist">SeniorCitizenIdentityCardList</option>
         {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>

@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-color: #fff; /* Base white */
   /* This simulates the parchment texture visible in the background of the table rows in your image */
-  background-image: url('/background.jpg'); /* Ensure you have your texture image in public folder */
+  /* background-image: url('/background.jpg');  */
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Kalimati', 'Kokila', sans-serif;
