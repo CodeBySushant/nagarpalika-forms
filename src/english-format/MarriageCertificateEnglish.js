@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MarriageCertificate.css'; // The CSS file for styling
+import './MarriageCertificateEnglish.css'; // The CSS file for styling
 
 const MarriageCertificate = () => {
   const [formData, setFormData] = useState({

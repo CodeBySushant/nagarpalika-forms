@@ -19,34 +19,6 @@ import RequestforCertification from './appeal/RequestforCertification'
 import RequestforCertificationMotherFather from './appeal/RequestforCertificationMotherFather'
 import TribalVerificationRecommendation from './appeal/TribalVerificationRecommendation'
 
-// src/english-format
-import RelationshipVerification from './english-format/RelationshipVerification';
-import ScholarshipVerification from './english-format/ScholarshipVerification';
-import PowerofAttorney from './english-format/PowerofAttorney';
-import BirthDateVerification from './english-format/BirthDateVerification';
-import AddressVerification from './english-format/AddressVerification';
-import AnnualIncomeCertificate from './english-format/AnnualIncomeCertificate';
-import UnmarriedVerification from './english-format/UnmarriedVerification';
-import TaxClearanceCertificate from './english-format/TaxCleranceCertificate';
-import TaxClearBasic from './english-format/TaxClearBasic';
-import SamePersonCertificate from './english-format/SamePersonCertificate';
-import PropertyValuationReport from './english-format/PropertyValuationReport';
-import OccupationVerification from './english-format/OccupationVerification';
-import MarriageCertificate from './english-format/MarriageCertificate';
-import EconomicStatus from './english-format/EconomicStatus';
-import DigitalVerification from './english-format/DigitalVerification';
-import CertificateOfOccupation from './english-format/CertificateofOccupation';
-
-// src/english-format/new
-import AddressVerificationNew from './english-format/new/AddressVerificationNew';
-import AnnualIncomeVerificationNew from './english-format/new/AnnualIncomeVerificationNew';
-import BirthCertificate from './english-format/new/BirthCertificate';
-import OccupationVerificationNew from './english-format/new/OccupationVerificationNew';
-import SurnameVerificationAfterMarriage from './english-format/new/SurnameVerificationAfterMarriage';
-import SurnameVerificationCertificateNew from './english-format/new/SurnameVerificationCertificateNew';
-import TaxClearanceNewFormat from './english-format/new/TaxClearanceNewFormat';
-import VerifyRevisedEmblem from './english-format/new/VerifyRevisedEmblem';
-
 // src/business-recommendation
 import BusinessClosed from './business-recommendation/BusinessClosed';
 import BusinessExtensionPannumber from './business-recommendation/BusinessExtensionPannumber';
@@ -71,6 +43,68 @@ import BusinessRegRenewCompleted from './business-reg/BusinessRegRenewCompleted'
 import BusinessRegistrationCertificate from './business-reg/BusinessRegistrationCertificate';
 import BusinessRegistrationRenewLeft from './business-reg/BusinessRegistrationRenewLeft';
 
+// src-daily-work-execute
+import DailyWorkPerformanceList from './daily-work-execute/DailyWorkPerformanceList';
+
+// src/english-format
+import RelationshipVerificationEnglish from './english-format/RelationshipVerificationEnglish';
+import ScholarshipVerification from './english-format/ScholarshipVerification';
+import PowerofAttorney from './english-format/PowerofAttorney';
+import BirthDateVerification from './english-format/BirthDateVerification';
+import AddressVerification from './english-format/AddressVerification';
+import AnnualIncomeCertificate from './english-format/AnnualIncomeCertificate';
+import UnmarriedVerificationEnglish from './english-format/UnmarriedVerificationEnglish';
+import TaxClearanceCertificate from './english-format/TaxCleranceCertificate';
+import TaxClearBasic from './english-format/TaxClearBasic';
+import SamePersonCertificate from './english-format/SamePersonCertificate';
+import PropertyValuationReport from './english-format/PropertyValuationReport';
+import OccupationVerification from './english-format/OccupationVerification';
+import MarriageCertificateEnglish from './english-format/MarriageCertificateEnglish';
+import EconomicStatus from './english-format/EconomicStatus';
+import DigitalVerification from './english-format/DigitalVerification';
+import CertificateOfOccupation from './english-format/CertificateofOccupation';
+
+// src/english-format/new
+import AddressVerificationNew from './english-format/new/AddressVerificationNew';
+import AnnualIncomeVerificationNew from './english-format/new/AnnualIncomeVerificationNew';
+import BirthCertificate from './english-format/new/BirthCertificate';
+import OccupationVerificationNew from './english-format/new/OccupationVerificationNew';
+import SurnameVerificationAfterMarriage from './english-format/new/SurnameVerificationAfterMarriage';
+import SurnameVerificationCertificateNew from './english-format/new/SurnameVerificationCertificateNew';
+import TaxClearanceNewFormat from './english-format/new/TaxClearanceNewFormat';
+import VerifyRevisedEmblem from './english-format/new/VerifyRevisedEmblem';
+
+// src/society-family
+import BehaviorRecommendation from './society-family/BehaviorRecommendation';
+import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
+import BirthOrSettlementRecommendation from './society-family/BirthOrSettlementRecommendation';
+import BirthVerificationNepali from './society-family/BirthVerificationNepali';
+import DemisedHeirRecommendation from './society-family/DemisedHeirRecommendation';
+import DemisedSecurityAllowanceToHeir from './society-family/DemisedSecurityAllowanceToHeir';
+import DestituteRecommendation from './society-family/DestituteRecommendation';
+import DisabilityIdentityCardRecommendation from './society-family/DisabilityIdentityCardRecommendation';
+import DisableIdentityCardRenew from './society-family/DisableIdentityCardRenew';
+import ElectricityConnectionRecommendation from './society-family/ElectricityConnectionRecommendation';
+import EthnicIdentityRecommendation from './society-family/EthnicIdentityRecommendation';
+import FreeHealthInsuranceRequest from './society-family/FreeHealthInsuranceRequest';
+import IncomeSourceCertification from './society-family/IncomeSourceCertification';
+import InternalMigrationRecommendation from './society-family/InternalMigrationRecommendation';
+import JesthaNagarikSifarisWada from './society-family/JesthaNagarikSifarisWada';
+import MarriageCertificate from './society-family/MarriageCertificate';
+import MinorIdentityCard from './society-family/MinorIdentityCard';
+import MinorIdentityCardRecommendation from './society-family/MinorIdentityCardRecommendation';
+import NewBirthVerification from './society-family/NewBirthVerification';
+import NoSecondMarriageRecommendation from './society-family/NoSecondMarriageRecommendation';
+import OldAgeAllowanceForm from './society-family/OldAgeAllowanceForm';
+import PermanentResidenceRecommendation from './society-family/PermanentResidenceRecommendation';
+import RelationTemporaryResidence from './society-family/RelationTemporaryResidence';
+import RelationshipVerification from './society-family/RelationshipVerification';
+import SocialSecurityAllowanceRecommendation from './society-family/SocialSecurityAllowanceRecommendation';
+import SocialSecurityRecommendation from './society-family/SocialSecurityRecommendation';
+import TemporaryResidenceRecommendation from './society-family/TemporaryResidenceRecommendation';
+import ThreeGenerationCertificate from './society-family/ThreeGenerationCertificate';
+import TribalRecommendation from './society-family/TribalRecommendation';
+import UnmarriedVerification from './society-family/UnmarriedVerification';
 
 import './App.css';
 
@@ -111,9 +145,12 @@ function App() {
         return <RequestforCertificationMotherFather />;
       case 'trivalverifyrecommend':
         return <TribalVerificationRecommendation />;
+      // src/daily-work-execute
+      case 'dailyworkperformance':
+        return <DailyWorkPerformanceList />;
       // src/english-format
-      case 'relationship':
-        return <RelationshipVerification />;
+      case 'relationshipenglish':
+        return <RelationshipVerificationEnglish />;
       case 'scholarship':
         return <ScholarshipVerification />;
       case 'powerofattorney':
@@ -122,8 +159,8 @@ function App() {
         return <AddressVerification />;
       case 'annualincome':
         return <AnnualIncomeCertificate />;
-      case 'unmarried':
-        return <UnmarriedVerification />;
+      case 'unmarriedenglish':
+        return <UnmarriedVerificationEnglish />;
       case 'taxclerance':
         return <TaxClearanceCertificate />;
       case 'taxclearbasic':
@@ -134,8 +171,8 @@ function App() {
         return <PropertyValuationReport />;
       case 'occupationverification':
         return <OccupationVerification />;
-      case 'marriage':
-        return <MarriageCertificate />;
+      case 'marriageenglish':
+        return <MarriageCertificateEnglish />;
       case 'economicstatus':
         return <EconomicStatus />;
       case 'digital':
@@ -203,6 +240,69 @@ function App() {
         return <ShopRegistrationForm />;
       case 'taxclearcertificate':
         return <TaxClearCertificate />;
+      // src/society-family
+      case 'behaviorrecommend':
+        return <BehaviorRecommendation />;
+      case 'beneficiaryallowancetransfer':
+        return <BeneficiaryAllowanceTransfer />;
+      case 'birthorsettlementrecommend':
+        return <BirthOrSettlementRecommendation />;
+      case 'birthverifynepali':
+        return <BirthVerificationNepali />;
+      case 'demisedheirrecommend':
+        return <DemisedHeirRecommendation />;
+      case 'demisedsecurityallowance':
+        return <DemisedSecurityAllowanceToHeir />;
+      case 'destituterecommend':
+        return <DestituteRecommendation />;
+      case 'disabilityidentitycardrecommend':
+        return <DisabilityIdentityCardRecommendation />;
+      case 'disableidentitycardrenew':
+        return <DisableIdentityCardRenew />;
+      case 'electricityconnection':
+        return <ElectricityConnectionRecommendation />;
+      case 'ethnicidentityrecommend':
+        return <EthnicIdentityRecommendation />;
+      case 'freehealthinsurance':
+        return <FreeHealthInsuranceRequest />;
+      case 'incomesourcecertificate':
+        return <IncomeSourceCertification />;
+      case 'internalmigrationrecommend':
+        return <InternalMigrationRecommendation />;
+      case 'jesthanagariksifariswada':
+        return <JesthaNagarikSifarisWada />;
+      case 'marriagecertificate':
+        return <MarriageCertificate />;
+      case 'minoridentitycard':
+        return <MinorIdentityCard />;
+      case 'minoridentitycardrecommend':
+        return <MinorIdentityCardRecommendation />;
+      case 'newbirthverify':
+        return <NewBirthVerification />;
+      case 'nosecondmarriage':
+        return <NoSecondMarriageRecommendation />;
+      case 'oldageallowance':
+        return <OldAgeAllowanceForm />;
+      case 'permanentresidencerecommend':
+        return <PermanentResidenceRecommendation />;
+      case 'relationshipverify':
+        return <RelationshipVerification />;
+      case 'relationtemporaryresidence':
+        return <RelationTemporaryResidence />;
+      case 'socialallowancerecommend':
+        return <SocialSecurityAllowanceRecommendation />;
+      case 'socialsecurityrecommend':
+        return <SocialSecurityRecommendation />;
+      case 'temporaryresidencerecommend':
+        return <TemporaryResidenceRecommendation />;
+      case 'threegenerationcertificate':
+        return <ThreeGenerationCertificate />;
+      case 'tribalrecommend':
+        return <TribalRecommendation />;
+      case 'unmarriedverify':
+        return <UnmarriedVerification />;
+      
+      
       
 
       default:
@@ -231,18 +331,20 @@ function App() {
         <option value="reqforcertificationmotherfather">Request for Certification Mother Father</option>
         <option value="trivalverifyrecommend">Tribal Verification Recommendation</option>
 
-        <option value="relationship">Relationship Verification</option>
+        <option value="dailyworkperformance">Daily Work Performance List</option>
+
+        <option value="relationshipenglish">Relationship Verification English</option>
         <option value="scholarship">Scholarship Verification</option>
         <option value="powerofattorney">Power Of Attorney</option>
         <option value="birthdate">Birthdate Verification</option>
         <option value="address">Address Verification</option>
         <option value="annualincome">Annual Income Certificate</option>
-        <option value="unmarried">Unmarried Verification</option>
+        <option value="unmarriedenglish">Unmarried Verification English</option>
         <option value="taxclerance">Tax Clearance Certificate</option>
         <option value="taxclearbasic">Tax Clear Basic</option>
         <option value="propertyvaluation">Property Valuation Report</option>
         <option value="occupationverification">Occupation Verification</option>
-        <option value="marriage">Marriage Certificate</option>
+        <option value="marriageenglish">Marriage Certificate English</option>
         <option value="economicstatus">Economic Status</option>
         <option value="digital">Digital Verification</option>
         <option value="certificateofoccupation">Certificate Of Occupation</option>
@@ -278,6 +380,37 @@ function App() {
         <option value="shopagricultureform">ShopAgriculturalForm</option>
         <option value="shopreg">ShopRegistrationForm</option>
         <option value="taxclearcertificate">TaxClearCertificate</option>
+
+        <option value="behaviorrecommend">BehaviorRecommendation</option>
+        <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>
+        <option value="birthorsettlementrecommend">BirthOrSettlementRecommendation</option>
+        <option value="birthverifynepali">BirthVerificationNepali</option>
+        <option value="demisedheirrecommend">DemisedHeirRecommendation</option>
+        <option value="demisedsecurityallowance">DemisedSecurityAllowanceToHeir</option>
+        <option value="destituterecommend">DestituteRecommendation</option>
+        <option value="disabilityidentitycardrecommend">DisabilityIdentityCardRecommendation</option>
+        <option value="disableidentitycardrenew">DisableIdentityCardRenew</option>
+        <option value="electricityconnection">ElectricityConnectionRecommendation</option>
+        <option value="ethnicidentityrecommend">EthnicIdentityRecommendation</option>
+        <option value="freehealthinsurance">FreeHealthInsuranceRequest</option>
+        <option value="incomesourcecertificate">IncomeSourceCertification</option>
+        <option value="internalmigrationrecommend">InternalMigrationRecommendation</option>
+        <option value="jesthanagariksifariswada">JesthaNagarikSifarisWada</option>
+        <option value="marriagecertificate">MarriageCertificate</option>
+        <option value="minoridentitycard">MinorIdentityCard</option>
+        <option value="minoridentitycardrecommend">MinorIdentityCardRecommendation</option>
+        <option value="newbirthverify">NewBirthVerification</option>
+        <option value="nosecondmarriage">NoSecondMarriageRecommendation</option>
+        <option value="oldageallowance">OldAgeAllowanceForm</option>
+        <option value="permanentresidencerecommend">PermanentResidenceRecommendation</option>
+        <option value="relationshipverify">RelationshipVerification</option>
+        <option value="relationtemporaryresidence">RelationTemporaryResidence</option>
+        <option value="socialallowancerecommend">SocialSecurityAllowanceRecommendation</option>
+        <option value="socialsecurityrecommend">SocialSecurityRecommendation</option>
+        <option value="temporaryresidencerecommend">TemporaryResidenceRecommendation</option>
+        <option value="threegenerationcertificate">ThreeGenerationCertificate</option>
+        <option value="tribalrecommend">TribalRecommendation</option>
+        <option value="unmarriedverify">UnmarriedVerification</option>
 
       </select>
 

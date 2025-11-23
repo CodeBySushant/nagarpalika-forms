@@ -2,7 +2,7 @@
 import React from 'react';
 import './NewBirthVerification.css';
 
-const BirthVerification = () => {
+const NewBirthVerification = () => {
   return (
     <div className="birth-verification-english-container">
       {/* --- Top Bar --- */}
@@ -219,4 +219,4 @@ const BirthVerification = () => {
   );
 };
 
-export default BirthVerificationNepali;
+export default NewBirthVerification;

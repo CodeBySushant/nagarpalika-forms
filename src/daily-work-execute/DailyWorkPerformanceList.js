@@ -9,39 +9,31 @@ const initialDummyData = [
 ];
 
 const DailyWorkPerformanceList = () => {
-  const [data, setData] = useState(initialDummyData);
+  const [data] = useState(initialDummyData); // FIXED: Removed unused setData
   const [fromDate, setFromDate] = useState('');
   const [toDate, setToDate] = useState('');
 
   const handleSearch = () => {
-    // This is where you would implement the actual search/filtering logic with real data.
-    // For now, we'll just log the dates.
     console.log('Searching from:', fromDate, 'to:', toDate);
-    // In a real app, you might fetch new data or filter the existing `data` state.
-    // setData(filteredData);
   };
 
   const handleAddRecord = () => {
-    // In a real app, this would likely open a modal or navigate to a new page.
     console.log('Add New Record button clicked');
     alert('नयाँ रेकर्ड थप्ने कार्यन्वयन हुन बाँकी छ।');
   };
 
   const handleExcelExport = () => {
-    // In a real app, this would trigger an Excel file download.
     console.log('Excel Export button clicked');
     alert('एक्सेल निर्यात कार्यन्वयन हुन बाँकी छ।');
   };
 
   const handleBack = () => {
-      // In a real app, navigate back using React Router
-      console.log('Back button clicked');
-      // navigate(-1);
+    console.log('Back button clicked');
   };
-
 
   return (
     <div className="daily-work-container">
+
       {/* --- Top Bar --- */}
       <div className="top-bar-header">
         <h1>दैनिक कार्य सम्पादनका सूचीहरू ।</h1>
@@ -58,22 +50,24 @@ const DailyWorkPerformanceList = () => {
       <div className="search-filter-bar">
         <div className="date-input-group">
           <input 
-            type="text" // Using text for Nepali date compatibility, could be 'date'
-            placeholder="मिति देखि" 
+            type="text"
+            placeholder="मिति देखि"
             className="filter-input"
             value={fromDate}
             onChange={(e) => setFromDate(e.target.value)}
           />
         </div>
+
         <div className="date-input-group">
           <input 
-            type="text" // Using text for Nepali date compatibility
-            placeholder="मिति सम्म" 
+            type="text"
+            placeholder="मिति सम्म"
             className="filter-input"
             value={toDate}
             onChange={(e) => setToDate(e.target.value)}
           />
         </div>
+
         <button className="search-btn" onClick={handleSearch}>🔍</button>
       </div>
 
@@ -89,6 +83,7 @@ const DailyWorkPerformanceList = () => {
               <th>कार्य</th>
             </tr>
           </thead>
+
           <tbody>
             {data.map((item) => (
               <tr key={item.id}>
@@ -99,6 +94,7 @@ const DailyWorkPerformanceList = () => {
                 <td>{item.task}</td>
               </tr>
             ))}
+
             {data.length === 0 && (
               <tr>
                 <td colSpan="5" style={{ textAlign: 'center', padding: '20px' }}>
@@ -109,9 +105,11 @@ const DailyWorkPerformanceList = () => {
           </tbody>
         </table>
       </div>
-       <div className="copyright-footer">
+
+      <div className="copyright-footer">
         © सर्वाधिकार सुरक्षित नागार्जुन नगरपालिका
       </div>
+
     </div>
   );
 };
