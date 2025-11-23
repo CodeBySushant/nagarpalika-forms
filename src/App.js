@@ -142,6 +142,20 @@ import FarmerGroupOrCommitteeRegistrationCertificate from './nepali-citizenship/
 import FarmerGroupOrCommitteeRegistrationCertificateList from './nepali-citizenship/FarmerGroupOrCommitteeRegistrationCertificateList';
 import PassbookOfConstructionWork from './nepali-citizenship/PassbookOfConstructionWork';
 
+// src/organization
+import BulkLoanRecommendation from './organization/BulkLoanRecommendation';
+import ClubRegistration from './organization/ClubRegistration';
+import ComitteeRegistration from './organization/ComitteeRegistration';
+import NewBankAccountRecommendation from './organization/NewBankAccountRecommendation';
+import NewOrganizationRegistration from './organization/NewOrganizationRegistration';
+import NonProfitOrgRegCertificate from './organization/NonProfitOrgRegCertificate';
+import OldNonProfitOrgRegCertificate from './organization/OldNonProfitOrgRegCertificate';
+import OrganizationRegistered from './organization/OrganizationRegistered';
+import OrganizationRegistrationPunishment from './organization/OrganizationRegistrationPunishment';
+import OrganizationRegistrationRecommendation from './organization/OrganizationRegistrationRecommendation';
+import OrganizationRenewRecommendation from './organization/OrganizationRenewRecommendation';
+import SocialOrganizationRenew from './organization/SocialOrganizationRenew';
+
 // src/society-family
 import BehaviorRecommendation from './society-family/BehaviorRecommendation';
 import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
@@ -423,6 +437,31 @@ function App() {
         return <FarmerGroupOrCommitteeRegistrationCertificateList />;
       case 'passbookofconstructionwork':
         return <PassbookOfConstructionWork />;
+      // src/organization
+      case 'bulkloanrecommend':
+        return <BulkLoanRecommendation />;
+      case 'clubreg':
+        return <ClubRegistration />;
+      case 'committeereg':
+        return <ComitteeRegistration />;
+      case 'newbankaccountrecommend':
+        return <NewBankAccountRecommendation />;
+      case 'neworgreg':
+        return <NewOrganizationRegistration />;
+      case 'nonprofitorgregcertificate':
+        return <NonProfitOrgRegCertificate />;
+      case 'oldnonprofitorg':
+        return <OldNonProfitOrgRegCertificate />;
+      case 'organizationreg':
+        return <OrganizationRegistered />;
+      case 'organizationregpunishment':
+        return <OrganizationRegistrationPunishment />;
+      case 'organizationregrecommend':
+        return <OrganizationRegistrationRecommendation />;
+      case 'organizationrenewrecommend':
+        return <OrganizationRenewRecommendation />;
+      case 'socialorganizationrenew':
+        return <SocialOrganizationRenew />;
       // src/society-family
       case 'behaviorrecommend':
         return <BehaviorRecommendation />;
@@ -624,6 +663,19 @@ function App() {
         <option value="farmergroupregistrationcertificate">FarmerGroupOrCommitteeRegistrationCertificate</option>
         <option value="farmergroupregistrationcertificatelist">FarmerGroupOrCommitteeRegistrationCertificateList</option>
         <option value="passbookofconstructionwork">PassbookOfConstructionWork</option>
+        {/* src/organization */}
+        <option value="bulkloanrecommend">BulkLoanRecommendation</option>
+        <option value="clubreg">ClubRegistration</option>
+        <option value="committeereg">ComitteeRegistration</option>
+        <option value="newbankaccountrecommend">NewBankAccountRecommendation</option>
+        <option value="neworgregister">NewOrganizationRegistration</option>
+        <option value="nonprofitorgcertificate">NonProfitOrgRegCertificate</option>
+        <option value="oldnonprofitorg">OldNonProfitOrgRegCertificate</option>
+        <option value="organizationregister">OrganizationRegistered</option>
+        <option value="organizationregpunishment">OrganizationRegistrationPunishment</option>
+        <option value="organizationregrecommend">OrganizationRegistrationRecommendation</option>
+        <option value="organizationrenewrecommend">OrganizationRenewRecommendation</option>
+        <option value="socialorganizationrenew">SocialOrganizationRenew</option>
         {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>

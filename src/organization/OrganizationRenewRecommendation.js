@@ -1,6 +1,6 @@
 // 3
 import React from "react";
-import "./OrganizationRenewalRecommendation.css";
+import "./OrganizationRenewRecommendation.css";
 
 function OrganizationRenewal() {
   return (

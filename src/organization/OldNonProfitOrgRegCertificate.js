@@ -1,6 +1,6 @@
 // 2
 import React from "react";
-import "./OldNonProfitOrgCertificate.css";
+import "./OldNonProfitOrgRegCertificate.css";
 
 function OldNonProfitOrgCertificate() {
   return (
