@@ -162,4 +162,4 @@ function IndustryClosedNotify() {
   );
 }
 
-export default UdhyogClosedNotify;
+export default IndustryClosedNotify;

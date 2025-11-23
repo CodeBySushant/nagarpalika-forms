@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+
+// src/animal-husbandry
+import DomesticAnimalInsuranceClaimRecommendation from './animal-husbandry/DomesticAnimalInsuranceClaimRecommendation';
+import DomesticAnimalMaternityNutritionAllowance from './animal-husbandry/DomesticAnimalMaternityNutritionAllowance';
+
 // src/appeal
 import AllowanceForm from './appeal/AllowanceForm';
 import BusinessRegistrationSignatureForm from './appeal/BusinessRegistrationSignatureForm'
@@ -31,6 +36,23 @@ import SurnameVerificationCertificateNew from './english-format/new/SurnameVerif
 import TaxClearanceNewFormat from './english-format/new/TaxClearanceNewFormat';
 import VerifyRevisedEmblem from './english-format/new/VerifyRevisedEmblem';
 
+// src/business-recommendation
+import BusinessClosed from './business-recommendation/BusinessClosed';
+import BusinessExtensionPannumber from './business-recommendation/BusinessExtensionPannumber';
+import BusinessRegSummary from './business-recommendation/BusinessRegSummary';
+import IndustryChange from './business-recommendation/IndustryChange';
+import IndustryClosedNotify from './business-recommendation/IndustryClosedNotify';
+import IndustryFormCancellation from './business-recommendation/IndustryFormCancellation';
+import IndustryPeriodSummary from './business-recommendation/IndustryPeriodSummary';
+import IndustryRegistrationRecommendation from './business-recommendation/IndustryRegistrationRecommendation';
+import IndustryTransferAcceptanceLetter from './business-recommendation/IndustryTransferAcceptanceLetter';
+import IndustryTransferAcceptanceReq from './business-recommendation/IndustryTransferAcceptanceReq';
+import NewBusinessPannumber from './business-recommendation/NewBusinessPannumber';
+import PartnershipRegistrationApplicationForm from './business-recommendation/PartnershipRegistrationApplicationForm';
+import ShopAgriculturalForm from './business-recommendation/ShopAgriculturalForm';
+import ShopRegistrationForm from './business-recommendation/ShopRegistrationForm';
+import TaxClearCertificate from './business-recommendation/TaxClearCertificate';
+
 // src/business-reg
 import BusinessIndustryRegistrationForm from './business-reg/BusinessIndustryRegistrationForm';
 import BusinessIndustryRegistrationNewList from './business-reg/BusinessIndustryRegistrationNewList';
@@ -46,6 +68,11 @@ function App() {
 
   const renderForm = () => {
     switch (form) {
+      // src/animal-husbandry
+      case 'domesticanimalinsuranceclaim':
+        return <DomesticAnimalInsuranceClaimRecommendation />;
+      case 'domesticanimalmaternitynutrition':
+        return <DomesticAnimalMaternityNutritionAllowance />;
       // src/appeal
       case 'allowance':
         return <AllowanceForm />;
@@ -112,6 +139,38 @@ function App() {
         return <BusinessRegistrationCertificate />;
       case 'businessregistrationrenewleft':
         return <BusinessRegistrationRenewLeft />;
+      // src/business-recommendation
+      case 'businessclosed':
+        return <BusinessClosed />;
+      case 'businessextension':
+        return <BusinessExtensionPannumber />;
+      case 'businessregsummary':
+        return <BusinessRegSummary />;
+      case 'industrychange':
+        return <IndustryChange />;
+      case 'industryclosednotify':
+        return <IndustryClosedNotify />;
+      case 'industryformcancel':
+        return <IndustryFormCancellation />;
+      case 'industryperiodsummary':
+        return <IndustryPeriodSummary />;
+      case 'industryregrecommend':
+        return <IndustryRegistrationRecommendation />;
+      case 'industryacceptanceletter':
+        return <IndustryTransferAcceptanceLetter />;
+      case 'industrytransferacceptreq':
+        return <IndustryTransferAcceptanceReq />;
+      case 'newbusinesspan':
+        return <NewBusinessPannumber />;
+      case 'partnershipapplication':
+        return <PartnershipRegistrationApplicationForm />;
+      case 'shopagricultureform':
+        return <ShopAgriculturalForm />;
+      case 'shopreg':
+        return <ShopRegistrationForm />;
+      case 'taxclearcertificate':
+        return <TaxClearCertificate />;
+      
 
       default:
         return <AllowanceForm />;
@@ -121,6 +180,9 @@ function App() {
   return (
     <div className="App">
       <select onChange={(e) => setForm(e.target.value)} value={form}>
+
+        <option value="domesticanimalinsuranceclaim">Domestic Animal Insurance Claim Recommendation</option>
+        <option value="domesticanimalmaternitynutrition">Domestic Animal Maternity Nutrition Allowance</option>
 
         <option value="allowance">Allowance Form</option>
         <option value="businessregsignature">Business Registration Signature Form</option>
@@ -151,11 +213,27 @@ function App() {
         <option value="taxclearancenew">Tax Clearance New Format</option>
         <option value="revisedemblem">Verify Revised Emblem</option>
 
-        <option value="businessindustryregistration">BusinessIndustryRegistrationForm</option>
-        <option value="newbusinessindustryregistration">BusinessIndustryRegistrationNewList</option>
-        <option value="businessregnenewcompleted">BusinessRegRenewCompleted</option>
-        <option value="businessregcertificate">BusinessRegistrationCertificate</option>
-        <option value="businessregistrationrenewleft">BusinessRegistrationRenewLeft</option>
+        <option value="businessindustryregistration">Business Industry Registration Form</option>
+        <option value="newbusinessindustryregistration">Business Industry Registration New List</option>
+        <option value="businessregnenewcompleted">Business Reg Renew Completed</option>
+        <option value="businessregcertificate">Business Registration Certificate</option>
+        <option value="businessregistrationrenewleft">Business Registration Renew Left</option>
+
+        <option value="businessclosed">BusinessClosed</option>
+        <option value="businessextension">BusinessExtensionPannumber</option>
+        <option value="businessregsummary">BusinessRegSummary</option>
+        <option value="industrychange">IndustryChange</option>
+        <option value="industryclosednotify">IndustryClosedNotify</option>
+        <option value="industryformcancel">IndustryFormCancellation</option>
+        <option value="industryperiodsummary">IndustryPeriodSummary</option>
+        <option value="industryregrecommend">IndustryRegistrationRecommendation</option>
+        <option value="industryacceptanceletter">IndustryTransferAcceptanceLetter</option>
+        <option value="industrytransferacceptreq">IndustryTransferAcceptanceReq</option>
+        <option value="newbusinesspan">NewBusinessPannumber</option>
+        <option value="partnershipapplication">PartnershipRegistrationApplicationForm</option>
+        <option value="shopagricultureform">ShopAgriculturalForm</option>
+        <option value="shopreg">ShopRegistrationForm</option>
+        <option value="taxclearcertificate">TaxClearCertificate</option>
 
       </select>
 

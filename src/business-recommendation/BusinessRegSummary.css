@@ -26,7 +26,7 @@ body {
 .brs-paper {
   margin: 0 24px 20px;
   padding: 30px 40px 40px;
-  background: url("https://i.ibb.co/hLDWQn3/paper-texture.jpg");
+  /* background: url("https://i.ibb.co/hLDWQn3/paper-texture.jpg"); */
   background-size: 280px 280px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
 }
@@ -131,5 +131,3 @@ body {
 .brs-subject-text {
   text-decoration: underline;
 }
-
-/* Body text with inlin*

@@ -345,4 +345,4 @@ function IndustryPeriodSummary() {
   );
 }
 
-export default UdhyogPeriodSummary;
+export default IndustryPeriodSummary;

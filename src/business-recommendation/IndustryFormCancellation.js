@@ -126,4 +126,4 @@ function IndustryFormCancellation() {
   );
 }
 
-export default UdhyogFormCancellation;
+export default IndustryFormCancellation;

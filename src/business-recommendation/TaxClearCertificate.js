@@ -1,6 +1,6 @@
 // 15
 import React from "react";
-import "./TaxClearanceCertificate.css";
+import "./TaxClearCertificate.css";
 
 function TaxClearanceCertificate() {
   return (
