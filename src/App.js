@@ -132,6 +132,16 @@ import TapInstallationRecommendation from './infra-development/TapInstallationRe
 // src/MRP
 import PassportRecommendation from './MRP/PassportRecommendation';
 
+// src/nepali-citizenship
+import BhawanNirmanSampanna from './nepali-citizenship/BhawanNirmanSampanna';
+import ConsumerCommitteeRegistrationList from './nepali-citizenship/ConsumerCommitteeRegistrationList';
+import DClassConstructionBusinessLicense from './nepali-citizenship/DClassConstructionBusinessLicense';
+import DClassConstructionBusinessLicenseList from './nepali-citizenship/DClassConstructionBusinessLicenseList';
+import DrinkingWaterCommitteeRegistration from './nepali-citizenship/DrinkingWaterCommitteeRegistration';
+import FarmerGroupOrCommitteeRegistrationCertificate from './nepali-citizenship/FarmerGroupOrCommitteeRegistrationCertificate';
+import FarmerGroupOrCommitteeRegistrationCertificateList from './nepali-citizenship/FarmerGroupOrCommitteeRegistrationCertificateList';
+import PassbookOfConstructionWork from './nepali-citizenship/PassbookOfConstructionWork';
+
 // src/society-family
 import BehaviorRecommendation from './society-family/BehaviorRecommendation';
 import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
@@ -396,6 +406,23 @@ function App() {
       // src/MRP
       case 'passportrecommend':
         return <PassportRecommendation />;
+      // src/nepali-citizenship
+      case 'bhawannirmansampanna':
+        return <BhawanNirmanSampanna />;
+      case 'consumercommitteereglist':
+        return <ConsumerCommitteeRegistrationList />;
+      case 'dclassbusinesslicence':
+        return <DClassConstructionBusinessLicense />;
+      case 'dclassbusinesslicencelist':
+        return <DClassConstructionBusinessLicenseList />;
+      case 'drinkingwatercommitteereg':
+        return <DrinkingWaterCommitteeRegistration />;
+      case 'farmergroupregistrationcertificate':
+        return <FarmerGroupOrCommitteeRegistrationCertificate />;
+      case 'farmergroupregistrationcertificatelist':
+        return <FarmerGroupOrCommitteeRegistrationCertificateList />;
+      case 'passbookofconstructionwork':
+        return <PassbookOfConstructionWork />;
       // src/society-family
       case 'behaviorrecommend':
         return <BehaviorRecommendation />;
@@ -588,6 +615,15 @@ function App() {
         <option value="tapinstallrecommend">TapInstallationRecommendation</option>
         {/* src/MRP */}
         <option value="passportrecommend">PassportRecommendation</option>
+        {/* src/nepali-citizenship */}
+        <option value="bhawannirmansampanna">BhawanNirmanSampanna</option>
+        <option value="consumercommitteereglist">ConsumerCommitteeRegistrationList</option>
+        <option value="dclassbusinesslicence">DClassConstructionBusinessLicense</option>
+        <option value="dclassbusinesslicencelist">DClassConstructionBusinessLicenseList</option>
+        <option value="drinkingwatercommitteereg">DrinkingWaterCommitteeRegistration</option>
+        <option value="farmergroupregistrationcertificate">FarmerGroupOrCommitteeRegistrationCertificate</option>
+        <option value="farmergroupregistrationcertificatelist">FarmerGroupOrCommitteeRegistrationCertificateList</option>
+        <option value="passbookofconstructionwork">PassbookOfConstructionWork</option>
         {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>
