@@ -118,6 +118,17 @@ import PropertyOwnershipTransferKitani from './home-land/PropertyOwnershipTransf
 import PropertyOwnershipTransferRecommendation from './home-land/PropertyOwnershipTransferRecommendation';
 import PropertyVerificationRecommendation from './home-land/PropertyVerificationRecommendation';
 
+// src/infra-development
+import ElectricityCapacityIncrease from './infra-development/ElectricityCapacityIncrease';
+import ElectricityInstallation from './infra-development/ElectricityInstallation';
+import ElectricityInstallationRecommendation from './infra-development/ElectricityInstallationRecommendation';
+import FreeElectricityConnectionRecommendation from './infra-development/FreeElectricityConnectionRecommendation';
+import IrrigationElectricMeterInstallationRecommendation from './infra-development/IrrigationElectricMeterInstallationRecommendation';
+import LandKittakatForRoadRecommendation from './infra-development/LandKittakatForRoadRecommendation';
+import RoadExcavationApprovalRecommendation from './infra-development/RoadExcavationApprovalRecommendation';
+import RoadMaintainRecommendation from './infra-development/RoadMaintainRecommendation';
+import TapInstallationRecommendation from './infra-development/TapInstallationRecommendation';
+
 // src/society-family
 import BehaviorRecommendation from './society-family/BehaviorRecommendation';
 import BeneficiaryAllowanceTransfer from './society-family/BeneficiaryAllowanceTransfer';
@@ -360,6 +371,25 @@ function App() {
         return <PropertyOwnershipTransferRecommendation />;
       case 'propertyverifyrecommend':
         return <PropertyVerificationRecommendation />;
+      // src/infra-development
+      case 'electricitycapacityincrease':
+        return <ElectricityCapacityIncrease />;
+      case 'electricityinstall':
+        return <ElectricityInstallation />;
+      case 'electricityinstallrecommend':
+        return <ElectricityInstallationRecommendation />;
+      case 'freeelectricityrecommend':
+        return <FreeElectricityConnectionRecommendation />;
+      case 'irrigationelectricmeterinstallrecommend':
+        return <IrrigationElectricMeterInstallationRecommendation />;
+      case 'landkittakatrecommend':
+        return <LandKittakatForRoadRecommendation />;
+      case 'roadexcavationapprovalrecommend':
+        return <RoadExcavationApprovalRecommendation />;
+      case 'roadmaintainrecommend':
+        return <RoadMaintainRecommendation />;
+      case 'tapinstallrecommend':
+        return <TapInstallationRecommendation />;
       // src/society-family
       case 'behaviorrecommend':
         return <BehaviorRecommendation />;
@@ -540,6 +570,16 @@ function App() {
         <option value="propertyownershiptransferkitani">PropertyOwnershipTransferKitani</option>
         <option value="propertyownershiptransferrecommend">PropertyOwnershipTransferRecommendation</option>
         <option value="propertyverifyrecommend">PropertyVerificationRecommendation</option>
+        {/* src/infra-development */}
+        <option value="electricitycapacityincrease">ElectricityCapacityIncrease</option>
+        <option value="electricityinstall">ElectricityInstallation</option>
+        <option value="electricityinstallrecommend">ElectricityInstallationRecommendation</option>
+        <option value="freelectricityconnectionrecommend">FreeElectricityConnectionRecommendation</option>
+        <option value="irrigationelectricmeterinstallrecommend">IrrigationElectricMeterInstallationRecommendation</option>
+        <option value="landkittakatrecommend">LandKittakatForRoadRecommendation</option>
+        <option value="roadexcavationapprovalrecommend">RoadExcavationApprovalRecommendation</option>
+        <option value="roadmaintainrecommend">RoadMaintainRecommendation</option>
+        <option value="tapinstallrecommend">TapInstallationRecommendation</option>
         {/* src/society-family */}
         <option value="behaviorrecommend">BehaviorRecommendation</option>
         <option value="beneficiaryallowancetransfer">BeneficiaryAllowanceTransfer</option>
